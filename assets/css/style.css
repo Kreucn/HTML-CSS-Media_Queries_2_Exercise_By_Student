@@ -1,9 +1,36 @@
 /* 
-	CSS by Kristoffer Egholm Wendelboe 
+	CSS by Alexandra Sadvárová 
 	UCN MMD 2020
 */
-@import url('https://fonts.googleapis.com/css2?family=Fjord+One&display=swap');
+body{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+}
 
-body {
-	font-family: 'Fjord One', serif;
+.box1{
+    background-color: orange;
+    padding: 3vw;
+}
+.box2{
+    background-color: orangered;
+    padding: 3vw;
+}
+.box3{
+    background-color: midnightblue;
+    padding: 3vw;
+}
+.box4{
+    background-color: olive;
+    padding: 3vw;
+}
+@media (max-width: 767px){
+    body{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 479px){
+    body{
+        grid-template-columns:  1fr;
+    }
 }
